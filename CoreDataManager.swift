@@ -10,7 +10,7 @@ class CoreDataManager {
     let persistentContainer: NSPersistentContainer
     
     init() {
-        persistentContainer = NSPersistentContainer(name: "HelloCoreModel")////File.xcdatamodel
+        persistentContainer = NSPersistentContainer(name: "HelloCoreModel") //File.xcdatamodel
         persistentContainer.loadPersistentStores{(description, error)in
             if let error = error {
                 fatalError("CoreData store failed\(error.localizedDescription)")
